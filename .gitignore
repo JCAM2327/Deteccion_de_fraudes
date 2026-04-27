@@ -1,0 +1,48 @@
+# Datos crudos y procesados (grandes o sensibles)
+data/raw/
+data/processed/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Credenciales y configuración local
+.kaggle/
+kaggle.json
+.env
+.env.*
+KAGGLE_API_TOKEN
+kaggle_env.sh
+
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+
+# Archivos de Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+
+# Caché y compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Archivos de salida generados
+outputs/models/
+outputs/reports/
+outputs/figures/
+
+# Archivos de distribución de Python
+*.egg-info/
+dist/
+build/
+
+# Archivos de sistema y de editor
+.DS_Store
+Thumbs.db
+.vscode/
+.devcontainer/
+*.swp
+*.swo
+*.log
