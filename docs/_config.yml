@@ -1,0 +1,16 @@
+theme: jekyll-theme-slate
+title: 🔍 Detección de Fraudes en Transacciones
+description: Sistema inteligente de detección de fraudes usando Machine Learning
+logo: 
+show_downloads: false
+google_analytics:
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: false
+
+include:
+  - README.md
