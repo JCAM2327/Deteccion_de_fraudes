@@ -3,7 +3,8 @@ layout: default
 title: Inicio Rápido
 ---
 
-# 🚀 Inicio Rápido
+# Inicio Rápido
+---
 
 Comienza a usar el proyecto en **5 minutos**.
 
