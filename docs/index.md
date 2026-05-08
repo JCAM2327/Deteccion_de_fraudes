@@ -207,6 +207,6 @@ Licencia MIT - Ver [LICENSE](https://github.com/JCAM2327/Deteccion_de_fraudes/bl
 
 ### 🌟 Si te resultó útil, ¡dale una ⭐ en GitHub!
 
-**Desarrollado con ❤️ usando Python y Machine Learning**
+**Desarrollado utilizando Python y Fundamentos de Machine Learning**
 
 </div>
