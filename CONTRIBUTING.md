@@ -114,26 +114,6 @@ Todo PR será revisado por el mantenedor:
 3. Validación de estándares
 4. Feedback y sugerencias
 
-## 📅 Roadmap
 
-Características planeadas:
-- [ ] API REST con FastAPI
-- [ ] Monitoreo automático en producción  
-- [ ] Reentrenamiento automático del modelo
-- [ ] Validación adversarial
-- [ ] Integración con bases de datos
-
-## 🙏 Código de Conducta
-
-- Sé respetuoso con otros contribuyentes
-- Aceptamos diferentes opiniones
-- Enfócate en el código, no en la persona
-- Reporta comportamientos inapropiados
-
-## ❓ Preguntas
-
-Si tienes preguntas o necesitas ayuda:
-- Abre una [Discussion](https://github.com/JCAM2327/Deteccion_de_fraudes/discussions)
-- Revisa [Issues anteriores](https://github.com/JCAM2327/Deteccion_de_fraudes/issues)
 
 ¡Gracias por contribuir! 🎉
