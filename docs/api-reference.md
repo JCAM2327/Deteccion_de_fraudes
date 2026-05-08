@@ -155,6 +155,8 @@ model.load_model('models/fraud_model.pkl')
 
 ## ExplainabilityAnalyzer
 
+> **Nota importante:** Esta clase acepta directamente una instancia de `FraudDetectionModel` (no es necesario pasar `model.model`). Internamente extrae el modelo XGBoost automáticamente.
+
 Clase para explicabilidad con SHAP.
 
 ### Métodos
@@ -162,9 +164,9 @@ Clase para explicabilidad con SHAP.
 #### `__init__(model, X_background=None, X_explain=None)`
 Inicializa el analizador.
 
-```python
-analyzer = ExplainabilityAnalyzer(model, X_train[:100], X_test)
-```
+- `model`: Puede ser una instancia de `FraudDetectionModel` o un modelo XGBoost entrenado directamente.
+- `X_background`: Datos de fondo para SHAP (normalmente una muestra de `X_train`).
+- `X_explain`: Datos a explicar (normalmente `X_test` o una muestra).
 
 #### `initialize_explainer(model_type='tree')`
 Inicializar SHAP explainer.
@@ -253,7 +255,7 @@ model.train_xgboost_smote(X_train, y_train)
 # 3. Evaluar
 metrics = model.evaluate(X_test, y_test)
 
-# 4. Explicar
+# 4. Explicar (model se pasa directamente)
 analyzer = ExplainabilityAnalyzer(model, X_train[:100], X_test)
 analyzer.initialize_explainer()
 shap_values = analyzer.compute_shap_values(X_test)
