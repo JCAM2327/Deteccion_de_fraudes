@@ -1,8 +1,9 @@
 # Datos crudos y procesados (grandes o sensibles)
 data/raw/
 data/processed/
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+models/
+*.pkl
+*.csv
 
 # Credenciales y configuración local
 .kaggle/
