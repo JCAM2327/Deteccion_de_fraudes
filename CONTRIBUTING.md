@@ -2,7 +2,7 @@
 
 ¡Gracias por tu interés en contribuir al proyecto de Detección de Fraudes! 
 
-## 📋 Cómo Contribuir
+## 📋 Cómo Contribuir 
 
 ### 1. Reportar Problemas
 Si encuentras un bug o tienes una sugerencia:
