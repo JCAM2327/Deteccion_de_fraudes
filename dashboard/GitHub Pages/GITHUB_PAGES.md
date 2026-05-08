@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,7 +11,9 @@
     >
 
     <title>
-        Detección de Fraudes | Machine Learning
+         <h1>
+            🔍 Sistema Inteligente de Detección de Fraudes
+        </h1>
     </title>
 
     <link rel="stylesheet" href="style.css">
@@ -21,10 +24,6 @@
     <!-- HERO -->
 
     <section class="hero">
-
-        <h1>
-            🔍 Sistema Inteligente de Detección de Fraudes
-        </h1>
 
         <p>
             Plataforma de Machine Learning para detección
@@ -244,3 +243,4 @@ streamlit run dashboard/app.py
 </body>
 
 </html>
+```
