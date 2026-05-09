@@ -12,31 +12,22 @@ from pathlib import Path
 
 
 class ExplainabilityAnalyzer:
-    """
-    Clase para analizar y explicar predicciones con SHAP.
-    
-    Genera visualizaciones e interpretaciones para:
-    - Importancia global de características (SHAP summary plot)
-    - Explicaciones locales por muestra (SHAP force plot)
-    - Dependencias entre características (SHAP dependence plot)
-    """
-    
     def __init__(self, model, X_background, X_explain):
-    """
-    Args:
-        model: Puede ser un XGBClassifier entrenado O una instancia de FraudDetectionModel
-        X_background: Datos de fondo para SHAP (normalmente una muestra de X_train)
-        X_explain: Datos a explicar (normalmente X_test o X_sample)
-    """
-    # Si es un FraudDetectionModel, extraer el modelo interno
-    if hasattr(model, 'model') and hasattr(model.model, 'get_booster'):
-        self.model = model.model
-    else:
-        self.model = model
-    
-    self.X_background = X_background
-    self.X_explain = X_explain
-    self.explainer = None
+        """
+        Args:
+            model: Puede ser un XGBClassifier entrenado O una instancia de FraudDetectionModel
+            X_background: Datos de fondo para SHAP (normalmente una muestra de X_train)
+            X_explain: Datos a explicar (normalmente X_test o X_sample)
+        """
+        # Si es un FraudDetectionModel, extraer el modelo interno
+        if hasattr(model, 'model') and hasattr(model.model, 'get_booster'):
+            self.model = model.model
+        else:
+            self.model = model
+        
+        self.X_background = X_background
+        self.X_explain = X_explain
+        self.explainer = None
         
     def initialize_explainer(self, model_type='tree'):
         """
